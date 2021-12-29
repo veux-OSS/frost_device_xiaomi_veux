@@ -1037,6 +1037,8 @@ vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
+vendor/etc/seccomp_policy/mediaextractor.policy|F8F95A8A0AF0DF5C9D3773A8C48B0A883ECCEE09
+vendor/etc/seccomp_policy/mediaswcodec.policy|0009BA45D183B7E27466BBC9BC2560BE3193A9CA
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
