@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -230,6 +234,9 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlay2201116SR \
     SettingsProviderOverlay2201116PG \
     SettingsProviderOverlay2201116PI
+
+PRODUCT_PACKAGES += \
+    DeviceAsWebcamOverlayVEUX
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/overlay/config-odm.xml:$(TARGET_COPY_OUT_ODM)/overlay/config/config.xml \
