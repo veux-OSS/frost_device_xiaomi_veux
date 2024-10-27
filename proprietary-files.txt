@@ -647,6 +647,9 @@ vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib64/libsecureui.so|95177ED547C9FD85D410BD9D505582CABC80FB1E
+vendor/lib64/libStDrvInt.so|6091F1F496B87730F9A77E9EDE504C4FA99C608A
+vendor/lib64/libsecureui_svcsock.so|6AF612F057F4F28720D6DB9B300B58C883DA6539
 
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
