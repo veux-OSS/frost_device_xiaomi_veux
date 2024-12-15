@@ -108,6 +108,14 @@ function blob_fixup() {
             llvm-strip --strip-debug "${2}"
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/libalLDC.so|vendor/lib64/libalhLDC.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_allocate" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_describe" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_lock" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_release" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_unlock" "${2}"
+            ;;
         vendor/lib64/libgoodixhwfingerprint.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
