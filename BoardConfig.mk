@@ -133,7 +133,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
-ifneq ($(WITH_GMS),true)
+ifneq ($(BLISS_BUILD_VARIANT),gapps)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1073741824
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
@@ -180,7 +180,7 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/voltage/sepolicy/libperfmgr/sepolicy.mk
+include device/bliss/sepolicy/libperfmgr/sepolicy.mk
 include vendor/xiaomi/miuicamera-veux/SEPolicy-veux.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public

@@ -12,23 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common BlissROM stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
-# VoltageOS flags.
+# BlissROM flags.
+BLISS_BUILDTYPE := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_AOSP_RECOVERY := true
-# Official-ify.
-VOLTAGE_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Bootanimation Resolution.
-TARGET_BOOT_ANIMATION_RES := 1920
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2201116SG
-PRODUCT_NAME := voltage_veux
+PRODUCT_NAME := bliss_veux
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
