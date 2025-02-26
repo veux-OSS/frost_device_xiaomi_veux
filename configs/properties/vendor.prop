@@ -116,7 +116,7 @@ ro.vendor.bluetooth.wipower=false
 
 # Camera
 camera.disable_zsl_mode=true
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.snapchat.android
 persist.vendor.camera.perflock.enable=0
 
 # Dalvik
