@@ -514,3 +514,6 @@ firmware_directories /vendor/firmware_mnt/image/
 # Elliptic
 /dev/elliptic0                 0644   system       system
 /dev/elliptic1                 0644   system       system
+
+# Battery
+/sys/class/qcom-battery                                 charging_enabled                0660    system  system

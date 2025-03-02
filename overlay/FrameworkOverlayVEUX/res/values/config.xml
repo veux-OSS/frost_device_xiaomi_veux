@@ -421,4 +421,9 @@
     <fraction name="def_window_animation_scale">80%</fraction>
     <fraction name="def_window_transition_scale">80%</fraction>
 
+    <!-- Some devices might require always setting the toggle instead of set based on current toggle
+         value. If this is the case, set this config to true to let the toggle provider always set
+         charging enabled status regardless of the current status. -->
+    <bool name="config_chargingControlToggleSetAlways">true</bool>
+
 </resources>
