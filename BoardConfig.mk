@@ -65,6 +65,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/oneplus/dolby/vintf/dolby_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
+    vendor/oneplus/dolby/vintf/dolby_manifest.xml \
     $(DEVICE_PATH)/hidl/manifest.xml
 
 DEVICE_MATRIX_FILE := \
